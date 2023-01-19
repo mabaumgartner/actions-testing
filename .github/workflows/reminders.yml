@@ -8,7 +8,7 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    # https://github.com/DavideViolante/pr-reviews-reminder-action/releases
-   - uses: DavideViolante/pr-reviews-reminder-action@26b1656e11af83c7a18eeafc701b35d75aeafc2a  # v2.2.2
+   - uses: DavideViolante/pr-reviews-reminder-action@2.2.3  # v2.2.3
      env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      with:

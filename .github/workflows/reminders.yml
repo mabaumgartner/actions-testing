@@ -5,12 +5,13 @@ on:
     - cron: "0,15,30,45 15-23 * * 1-5"
 jobs:
   pr-reviews-reminder:
-   runs-on: ubuntu-latest
-   steps:
-   # https://github.com/DavideViolante/pr-reviews-reminder-action/releases
-   - uses: DavideViolante/pr-reviews-reminder-action@v2.2.3  # v2.2.3
-     env:
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-     with:
-       webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
-       provider: 'msteams'
+    runs-on: ubuntu-latest
+    steps:
+    # https://github.com/DavideViolante/pr-reviews-reminder-action/releases
+    - uses: DavideViolante/pr-reviews-reminder-action@v2.2.3  # v2.2.3
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
+        provider: 'msteams'
+        github-provider-map: 'asvalent:asvalent@illinois.edu'

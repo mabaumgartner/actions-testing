@@ -2,13 +2,13 @@ name: PR review reminders
 on:
   schedule:
     # Every weekday every 2 hours during working hours, send notification 
-    - cron: "0,15,30,45 16-23 * * 1-5"
+    - cron: "0,15,30,45 15-23 * * 1-5"
 jobs:
   pr-reviews-reminder:
    runs-on: ubuntu-latest
    steps:
    # https://github.com/DavideViolante/pr-reviews-reminder-action/releases
-   - uses: DavideViolante/pr-reviews-reminder-action@v2.2.2
+   - uses: DavideViolante/pr-reviews-reminder-action@v2.0.0
      env:
        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      with:

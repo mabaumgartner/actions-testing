@@ -14,4 +14,4 @@ jobs:
       with:
         webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
         provider: 'msteams'
-        github-provider-map: 'asvalent:asvalent@illinois.edu'
+        github-provider-map: 'asvalent:asvalent@illinois.edu,mabaumgartner:mab@illinois.edu'

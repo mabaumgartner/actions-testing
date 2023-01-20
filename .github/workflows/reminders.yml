@@ -2,7 +2,7 @@ name: PR review reminders
 on:
   schedule:
     # Every weekday every 2 hours during working hours, send notification 
-    - cron: "0,15,30,45 16-23 * * 1-5"
+    - cron: "0,15,30,45 15-23 * * 1-5"
 jobs:
   pr-reviews-reminder:
    runs-on: ubuntu-latest

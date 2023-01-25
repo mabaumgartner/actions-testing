@@ -15,7 +15,7 @@ jobs:
         webhook-url: ${{ secrets.TEAMS_WEBHOOK }}
         provider: 'msteams'
         ignore-label: no-reminder
-        github-provider-map: >-
+        github-provider-map: >
           apetsche1:apetsche@illinois.edu,
           asvalent:asvalent@illinois.edu,
           mabaumgartner:mab@illinois.edu,
